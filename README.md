@@ -1,13 +1,11 @@
 
-## nestjs crud postgres
+## nestjs crud mongodb
 
 This repository is created with the purpose of creating a basic API with NestJS, its use is recommended for a small project and to be able to test some important features of NestJS
 
-
 ## Tech Stack
 
-**Server:** NestJS, OpenApi, Express, PostgreSQL, TypeOrm
-
+**Server:** NestJS, OpenApi, Express, MongoDB, Mongoose
 
 ## API Reference
 
@@ -98,32 +96,21 @@ Install nestjs-crud-mongodb with npm
   cd nestjs-crud-mongodb
   npm i
 ```
-    
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
 `PORT=3000`
-
 `BASE_URL=http://localhost:3000`
-
-`DATABASE_HOST=localhost`
-
-`DATABASE_NAME=todo`
-
-`DATABASE_USER=user`
-
-`DATABASE_PASSWORD=user-pwd`
-
-`DATABASE_PORT=5432`
-
+`DATABASE_URL='mongodb://admin:admin@localhost:27017/todo?retryWrites=true&serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1'`
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/sumeriocode/NestJS-Crud-PgSQL
+  git clone https://github.com/sumeriocode/NestJS-Crud-MongoDB 
 ```
 
 Go to the project directory
@@ -150,8 +137,6 @@ Build
   npm run build
 ```
 
-
 ## Authors
 
 - [@sumeriocode](https://www.github.com/sumeriocode)
-
