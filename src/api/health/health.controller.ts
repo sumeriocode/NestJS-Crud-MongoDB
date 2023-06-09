@@ -2,7 +2,7 @@ import {
   Controller,
   Get,
 } from '@nestjs/common';
-import { HealthCheck, HealthCheckService, HttpHealthIndicator, TypeOrmHealthIndicator } from '@nestjs/terminus';
+import { HealthCheck, HealthCheckService, HttpHealthIndicator } from '@nestjs/terminus';
 import { ApiTags } from '@nestjs/swagger';
 
 
