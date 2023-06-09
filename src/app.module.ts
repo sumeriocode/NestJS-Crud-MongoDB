@@ -10,7 +10,7 @@ const envFilePath: string = getEnvPath(`${__dirname}/common/envs`);
 @Module({
   imports: [
     ConfigModule.forRoot({ envFilePath, isGlobal: true }),
-    MongooseModule.forRoot('mongodb://admin:admin@localhost:27017/todo?retryWrites=true&serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1'),
+    MongooseModule.forRoot(process.env.DATABASE_URL),
     ApiModule,
   ],
   providers: [AppService],

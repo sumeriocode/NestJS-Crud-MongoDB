@@ -43,7 +43,6 @@ export class TodoService {
             throw new Error(`Todo with ID ${id} not found.`);
         }
         todo.name = body.name;
-        // Actualizar otros campos según sea necesario
         return this.todoModel.create(todo);
     }
 
