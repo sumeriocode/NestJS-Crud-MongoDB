@@ -102,7 +102,9 @@ Install nestjs-crud-mongodb with npm
 To run this project, you will need to add the following environment variables to your .env file
 
 `PORT=3000`
+
 `BASE_URL=http://localhost:3000`
+
 `DATABASE_URL='mongodb://admin:admin@localhost:27017/todo?retryWrites=true&serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1'`
 
 ## Run Locally
